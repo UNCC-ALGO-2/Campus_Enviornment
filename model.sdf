@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='Campus_Envirornment'>
+    <link name='body'>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <pose>-38.267696 200.605194 -0.28 0 -0 0</pose>
+      <visual name='visual'>
+        <!--<geometry>
+          <mesh>
+            <uri>model://Campus_Envirornment/meshes/campus_with_terrain.dae</uri>
+          </mesh>
+        </geometry>-->
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <geometry>
+          <mesh>
+            <uri>model://Campus_Envirornment/meshes/campus_with_terrain.dae</uri>
+          </mesh>
+          <!--<heightmap>
+            <uri>model://Campus_Envirornment/meshes/terrain_heightMK2.png</uri>
+            <size>513 513 55.25</size>
+            <pos>0 0 0</pos>
+          </heightmap>-->
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <!--<heightmap>
+            <uri>model://Campus_Envirornment/meshes/terrain_heightMK2.png</uri>
+            <size>513 513 55.25</size>
+            <pos>0 0 0</pos>
+          </heightmap>-->
+          <mesh>
+            <uri>model://Campus_Envirornment/meshes/campus_with_terrain.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
